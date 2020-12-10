@@ -19,7 +19,6 @@
 .header__location {
   display: flex;
   align-items: center;
-  /* margin-top: 20px; */
 }
 
 .header__search {
@@ -72,4 +71,5 @@
   flex-direction: column;
   margin-left: 10px;
   margin-right: 10px;
+  color: #fff;
 }

@@ -24,10 +24,12 @@ function Header() {
             </div>
 
             <div className="header__nav">
+                <Link to="/login" style={{textDecoration: 'none'}}>
                 <div className="header__option">
                     <span className="header__optionOne">Hello Mutua</span>
                     <span className="header__optionTwo">Sign In</span>
                 </div>
+                </Link>
 
                 <div className="header__option">
                     <span className="header__optionOne">Returns</span>
@@ -39,7 +41,7 @@ function Header() {
                     <span className="header__optionTwo">Prime</span>
                 </div>
 
-                <Link to="/checkout">
+                <Link to="/checkout" style={{textDecoration: 'none'}}>
                 <div className="header__optionBasket">
                     <ShoppingBasketIcon />
                     <span className="header__optionTwo header__basketCount">{basket?.length}</span>
