@@ -1,3 +1,7 @@
 ### Amazon - clone
 
-- using Reactjs
+using
+- Reactjs
+- Firebase
+
+
