@@ -8,15 +8,16 @@ import { useStateValue } from './StateProvider';
 import { auth } from './firebase';
 
 function Header() {
-    const [{user}, {basket}] = useStateValue();
-    console.log(user?.email)
+    const [{basket}, {user}] = useStateValue();
+    console.log(basket)
 
     const handleAuthentication = () => {
         if(user) {
             auth.signOut();
         }
     }
-        return (
+
+    return (
         <div className="header">
             <Link to="/">
                 <img className="header__logo" src="http://pngimg.com/uploads/amazon/amazon_PNG25.png" alt=""/>
@@ -49,7 +50,7 @@ function Header() {
                     <span className="header__optionTwo">Prime</span>
                 </div>
 
-                <Link to="/checkout" style={{textDecoration: 'none'}}>
+                <Link to="/checkout">
                 <div className="header__optionBasket">
                     <ShoppingBasketIcon />
                     <span className="header__optionTwo header__basketCount">{basket?.length}</span>
