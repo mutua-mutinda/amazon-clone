@@ -38,7 +38,7 @@ function Header() {
                 style={{textDecoration: 'none'}}>
                 <div onClick={handleAuthentication}
                    className="header__option">
-                    <span className="header__optionOne">Hello {user?.email}</span>
+                    <span className="header__optionOne">Hello {!user ? 'Guest' : user?.email}</span>
                     <span className="header__optionTwo">{user? "Sign Out": "Sign In"}</span>
                 </div>
                 </Link>
