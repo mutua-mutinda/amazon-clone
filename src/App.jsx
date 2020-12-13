@@ -7,6 +7,7 @@ import Login from './Login';
 import { useStateValue } from './StateProvider';
 import { useEffect } from 'react';
 import {auth} from './firebase'
+import Payment from './Payment';
 
 function App() {
   const[{}, dispatch] = useStateValue();
@@ -29,16 +30,22 @@ function App() {
   },[])
   return (
     <Router>
-    {/* <Header /> *to render in every route regardless */}
     <div className="app">
       <Switch>
       <Route path="/login">
         <Login />
       </Route>
+
       <Route path="/checkout">
       <Header />
        <Checkout />
       </Route>
+
+      <Route path="/payment">
+      <Header />
+      <Payment />
+      </Route>
+
       <Route path="/">
         <Header />
         <Home />
