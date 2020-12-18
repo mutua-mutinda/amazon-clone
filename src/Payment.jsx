@@ -37,14 +37,11 @@ function Payment() {
             });
             
             setClientSecret(response.data);
-            console.log("client secret>>",response.data)
         }
 
         getClientSecret();
         
     },[basket])
-    console.log("client secret", clientSecret);    
-
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -70,7 +67,7 @@ function Payment() {
             })
             
         })
-        history.replace('/order');
+        history.replace('/orders');
 
         
         

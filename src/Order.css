@@ -1,0 +1,22 @@
+.order {
+  padding: 40px;
+  margin: 20px 0;
+  border: 1px solid lightgray;
+  background-color: #fff;
+  position: relative;
+}
+
+.order > h2 {
+  margin-bottom: 10px;
+}
+
+.order__id {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+.order__total {
+  font-weight: 500;
+  text-align: right;
+}
