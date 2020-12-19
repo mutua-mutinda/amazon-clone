@@ -19,10 +19,10 @@ app.post("/payments/create", async (req, res) => {
         currency: 'usd',
       });
 
-    //   const clientSecret = paymentIntent.client_secret
+    
       res.status(201).send(paymentIntent.client_secret)
         console.log("payment client secret>>>", paymentIntent.client_secret);
-        // console.log("client>>>", clientSecret.toString());
+    
 })
 
 
